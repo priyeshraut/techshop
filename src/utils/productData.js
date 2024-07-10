@@ -1,5 +1,5 @@
 import img_01 from "../Images/allItems/img_01.webp";
-import img_02 from "../Images/allItems/img_02.webp";
+import img_02 from "../images/allItems/img_02.webp";
 import img_03 from "../Images/allItems/img_03.webp";
 import img_04 from "../Images/allItems/img_04.webp";
 import img_05 from "../Images/allItems/img_05.webp";
