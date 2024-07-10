@@ -25,10 +25,6 @@ const ProductDetail = () => {
   return (
     <main ref={firstComponentRef} className="productDetials">
       <article>
-        <div className="navigation">
-          <i className="ri-arrow-left-s-line"></i>
-          <p>Back to Home</p>
-        </div>
         <div className="img">
           <div className="productImg">
             <img src={image} alt="" />
@@ -65,38 +61,6 @@ const ProductDetail = () => {
             Buy Now
           </button>
           <p>{itemDesc}</p>
-        </section>
-        <section className="itemDescSection">
-          <div className="faq">
-            <div>
-              <h2>Product Info</h2>
-              <div className="icons">
-                <i className="ri-add-line"></i>
-                <i className="ri-subtract-line"></i>
-              </div>
-            </div>
-            <p>{itemInfo}</p>
-          </div>
-          <div className="faq">
-            <div>
-              <h2>Return & Refund Policy</h2>
-              <div className="icons">
-                <i className="ri-add-line"></i>
-                <i className="ri-subtract-line"></i>
-              </div>
-            </div>
-            <p>{returnRefundPolicy}</p>
-          </div>
-          <div className="faq">
-            <div>
-              <h2>Shipping Info</h2>
-              <div className="icons">
-                <i className="ri-add-line"></i>
-                <i className="ri-subtract-line"></i>
-              </div>
-            </div>
-            <p>{shippingInfo}</p>
-          </div>
         </section>
       </article>
       <MoveToTop topLinkRef={topLinkRef} />
