@@ -2839,7 +2839,6 @@ header .caterories {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    margin-top: 2em;
     flex-basis: 20%;
   }
 
