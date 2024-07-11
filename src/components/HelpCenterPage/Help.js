@@ -14,21 +14,6 @@ const Help = () => {
             <div>
               <h3>Frequently asked questions</h3>
             </div>
-            <div>
-              <p>Choose a category</p>
-              <select name="select" id="select">
-                <option value="General">General</option>
-                <option value="settinUpFaq">Setting up FAQs</option>
-              </select>
-            </div>
-            <ul className="category">
-              <li>
-                General
-              </li>
-              <li>
-                Setting up FAQs
-              </li>
-            </ul>
           </div>
           {faqData.map((data, idx) => (
             <Faq

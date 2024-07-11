@@ -4,6 +4,7 @@ import MainNavigation from "./MainNavigation";
 import { useSelector } from "react-redux";
 import { signOut } from "firebase/auth";
 import { auth } from "../../utils/firebase";
+import User from "./User";
 
 const SideBarNavigation = ({ aside, hideAside }) => {
   const navigate = useNavigate();
@@ -19,29 +20,8 @@ const SideBarNavigation = ({ aside, hideAside }) => {
   return (
     <aside className={`hamburgerMobileView ${aside}`}>
       <div className="hamMobileIcon">
-        <div className="login_likedItem">
-          <div className="headerMainInnerSecondLogin">
-          <div id="userCont">
-              {user?.photoURL ? (
-                <span id="userImg">
-                  <img src={user.photoURL} alt="user" />
-                </span>
-              ) : (
-                <span>
-                  <i className="fa-solid fa-user"></i>
-                </span>
-              )}
-              <span>
-                <i className="fa fa-sharp fa-light fa-angle-down"></i>
-              </span>
-            </div>
-            <div id="dropDownCont">
-              <p>{user?.displayName}</p>
-              <p onClick={handleSignOut}>
-               Log Out
-              </p>
-            </div>
-          </div>
+        <div className="sideBarLoginUser">
+          <User />
         </div>
         <div>
           <i

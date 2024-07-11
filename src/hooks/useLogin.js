@@ -8,8 +8,9 @@ import {
   GoogleAuthProvider,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { useNavigate } from "react-router-dom";
 
 const useLogin = () => {
     const [isSignUpForm, setIsSignUpForm] = useState(false);
@@ -18,11 +19,18 @@ const useLogin = () => {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    
+  const fromPath = useSelector((store) => store.path.fromPath)
+
+
   
     const handleButtonClick = () => {
       const message = checkValidateData(
-        emailRef.current.value,
-        passwordRef.current.value
+        nameRef.current?.value,
+        emailRef.current?.value,
+        passwordRef.current?.value
       );
       setErrorMessage(message);
   
@@ -42,9 +50,10 @@ const useLogin = () => {
               .then(() => {
                 dispatch(addUser({ displayName: auth.currentUser.displayName }));
               })
-              .catch((error) => {
-                setErrorMessage(error.message);
+              .catch(() => {
+                setErrorMessage("Something went wrong please try again some later");
               });
+              navigate(fromPath)
           })
           .catch(() => {
             setErrorMessage("Email already in use");
@@ -59,6 +68,7 @@ const useLogin = () => {
             const user = result.user;
             const { displayName } = user;
             dispatch(addUser({ displayName }));
+            navigate(fromPath)
           })
           .catch(() => {
             setErrorMessage("Incorrect Email Id or Password");
@@ -74,6 +84,7 @@ const useLogin = () => {
           const user = result.user;
           const { displayName, photoURL } = user;
           dispatch(addUser({ displayName, photoURL }));
+          navigate(fromPath)
         })
         .catch(() => {
           setErrorMessage("Something went wrong please try again some later");
@@ -81,7 +92,7 @@ const useLogin = () => {
     };
 
 
-    return {isSignUpForm, nameRef, emailRef, passwordRef, handleButtonClick, errorMessage, handleSignWithGoogle, setIsSignUpForm}
+    return {isSignUpForm, nameRef, emailRef, passwordRef, fromPath, handleButtonClick, errorMessage, handleSignWithGoogle, setIsSignUpForm}
 }
 
 export default useLogin

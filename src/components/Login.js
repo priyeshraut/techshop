@@ -1,5 +1,6 @@
 import googleLogo from "../images/google_logo.png";
 import useLogin from "../hooks/useLogin";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -7,18 +8,25 @@ const Login = () => {
     nameRef,
     emailRef,
     passwordRef,
+    fromPath,
     handleButtonClick,
     errorMessage,
     handleSignWithGoogle,
     setIsSignUpForm,
   } = useLogin();
 
+
   return (
     <div className="loginSignupSection ">
+      <div className="loginClose">
+        <Link to={fromPath || '/'}>
+          <i className="fa fa-sharp fa-thin fa-xmark"></i>
+        </Link>
+      </div>
       <div className="loginSignUpContainer">
         <div className="loginForm">
           <div className="loginSignup">
-            <h2>{isSignUpForm ? "Sign Up" : "Login"}</h2>
+            <h2>{isSignUpForm ? "Sign Up" : "Log In"}</h2>
             <form onSubmit={(e) => e.preventDefault()}>
               {isSignUpForm && (
                 <input
@@ -26,7 +34,6 @@ const Login = () => {
                   type="text"
                   name="text"
                   placeholder="Name"
-                  required
                 />
               )}
               <input
@@ -34,7 +41,6 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                required
               />
               <input
                 ref={passwordRef}
@@ -42,10 +48,9 @@ const Login = () => {
                 name="password"
                 placeholder="Password"
                 autoComplete="current-password"
-                required
               />
               <button onClick={handleButtonClick} type="submit">
-                {isSignUpForm ? "Sign Up" : "Login"}
+                {isSignUpForm ? "Sign Up" : "Log In"}
               </button>
             </form>
           </div>
@@ -59,7 +64,7 @@ const Login = () => {
             }}
             type="submit"
           >
-            {isSignUpForm ? "Login" : "Sign Up"}
+            {isSignUpForm ? "Log In" : "Sign Up"}
           </button>
         </div>
         <button

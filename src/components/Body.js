@@ -10,11 +10,11 @@ const Body = () => {
   useOnAuthStateChanged();
 
   return (
-    <>
-      {location.pathname !== "/login" && <Header />}  
+    <React.StrictMode>
+      {location.pathname !== "/login" && <Header />}
       <Outlet />
       {location.pathname !== "/login" && <Footer />}
-    </>
+    </React.StrictMode>
   );
 };
 

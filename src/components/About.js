@@ -7,7 +7,7 @@ const About = () => {
   const { firstComponentRef, topLinkRef } = useFirstComponentAndMoveToTop();
 
   return (
-    <main ref={firstComponentRef}>=
+    <main ref={firstComponentRef}>
       <AboutUs />
       <Career />
       <MoveToTop ref={topLinkRef} />

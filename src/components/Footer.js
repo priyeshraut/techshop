@@ -7,7 +7,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer>{location.pathname !== "/login" &&
+      <>
       <NeedHelp />
       <FooterNavigation />
       <section className="footerPaymentMethods">
@@ -18,6 +19,8 @@ const Footer = () => {
           ))}
         </div>
       </section>
+      </>
+      }
       <p className="footerLower">
         Copyright &copy; <span className="year">{currentYear}</span>{" "}
         www.techshop.com - All right reserved

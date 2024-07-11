@@ -226,9 +226,14 @@ header {
   font-weight: 600;
 }
 
+#loginUser a {
+  color: var(--black);
+}
+
 #dropDownCont {
   position: absolute;
   width: 150px;
+  top: 100%;
   right: 0;
   background-color: var(--ede);
   padding: 0 .5em;
@@ -350,7 +355,7 @@ header .caterories li a {
   justify-content: space-between;
 }
 
-.hamMobileIcon .login_likedItem {
+.hamMobileIcon .sideBarLoginUser {
   display: flex;
   gap: 1em;
 }
@@ -2021,6 +2026,18 @@ article .faq  .icons i:nth-child(2) {
   justify-content: center;
   align-items: center;
   background-color: white;
+  position: relative;
+}
+
+.loginClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.loginClose i {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 
