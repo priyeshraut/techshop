@@ -19,4 +19,4 @@
 
 
 
-Check out the website here: techshopecom.netlify.app
+Check out the website here: [techshopecom.netlify.app](https://techshopecom.netlify.app)
