@@ -9,9 +9,6 @@ const ProductDetail = () => {
   const {
     itemName,
     itemDesc,
-    itemInfo,
-    returnRefundPolicy,
-    shippingInfo,
     image,
     formattedPrice,
     formattedCutPrice,

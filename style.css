@@ -228,6 +228,7 @@ header {
 
 #loginUser a {
   color: var(--black);
+  cursor: pointer;
 }
 
 #dropDownCont {
@@ -358,6 +359,10 @@ header .caterories li a {
 .hamMobileIcon .sideBarLoginUser {
   display: flex;
   gap: 1em;
+}
+
+.sideBarLoginUser #loginUser {
+  cursor: pointer;
 }
 
 .hamMobileIcon span {
@@ -1579,9 +1584,9 @@ article .img p {
   display: none;
 }
 
-article .productImg {
+/* article .productImg {
   border: 1px solid #bebdbd;
-}
+} */
 
 article .img img {
   width: 100%;
