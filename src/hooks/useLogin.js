@@ -76,7 +76,7 @@ const useLogin = () => {
           dispatch(addUser({ displayName, photoURL }));
         })
         .catch(() => {
-          setErrorMessage("try again some later");
+          setErrorMessage("Something went wrong please try again some later");
         });
     };
 

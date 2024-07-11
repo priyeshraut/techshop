@@ -326,7 +326,7 @@ header .caterories li a {
 .hamburgerMobileView {
   min-height: 100vh;
   background-color: var(--ede);
-  padding: 1.3em 0.8em 0;
+  padding: 0 0.8em 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

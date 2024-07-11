@@ -49,9 +49,9 @@ const MainHeader = ({ showAside }) => {
             <h1>TechShop</h1>
           </Link>
           <div className="icons">
-            <Link to="/cart">
+            <Link to={"/cart"}>
               <i className="fa fa-thin fa-cart-shopping"></i>
-              <span className="number">0</span>
+              <span className="number">{totalCartItems}</span>
             </Link>
             <i
               onClick={showAside}
