@@ -41,6 +41,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
+                autoComplete="username"
               />
               <input
                 ref={passwordRef}
