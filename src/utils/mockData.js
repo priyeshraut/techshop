@@ -71,61 +71,51 @@ export const faqData = [
 
 export const shopByCategoryData = [
   {
-    id: 1,
     catImg: shopByCategory01,
     catHeading: "Computers",
     route: "computers",
   },
   {
-    id: 2,
     catImg: shopByCategory02,
     catHeading: "Mobile",
     route: "mobile",
   },
   {
-    id: 3,
     catImg: shopByCategory03,
     catHeading: "Drones & Cameras",
-    route: "dronesandcameras",
+    route: "drones&cameras",
   },
   {
-    id: 4,
     catImg: shopByCategory04,
     catHeading: "Sale",
     route: "sale",
   },
   {
-    id: 5,
     catImg: shopByCategory05,
     catHeading: "Tablets",
     route: "tablets",
   },
   {
-    id: 6,
     catImg: shopByCategory06,
     catHeading: "Best Sellers",
     route: "bestsellers",
   },
   {
-    id: 7,
     catImg: shopByCategory07,
     catHeading: "T.V & Home Cinema",
     route: "tvandhomecinema",
   },
   {
-    id: 8,
     catImg: shopByCategory08,
     catHeading: "Wearable Tech",
     route: "wearabletech",
   },
   {
-    id: 9,
     catImg: shopByCategory09,
     catHeading: "Speakers",
     route: "speakers",
   },
   {
-    id: 10,
     catImg: shopByCategory10,
     catHeading: "Headphones",
     route: "headphones",

@@ -22,6 +22,8 @@ import Speakers from "./components/Categories/Speakers";
 import SearchResults from "./components/SearchResults";
 import ProductDetail from "./components/ProductDetail";
 import Login from "./components/Login";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 const appRouter = createBrowserRouter([
   {
@@ -53,4 +55,10 @@ const appRouter = createBrowserRouter([
 ]);
 
 const root = ReactDom.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter} />);
+root.render(
+  <React.StrictMode>
+    <Provider store={appStore}>
+      <RouterProvider router={appRouter} />
+    </Provider>
+  </React.StrictMode>
+);

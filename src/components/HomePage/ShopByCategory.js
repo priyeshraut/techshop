@@ -11,7 +11,7 @@ const ShopByCategory = () => {
         <div className="caterories">
           {
             shopByCategoryData.map((data) => (
-              <Category key={data.id} catImg={data.catImg} catHeading={data.catHeading} route={data.route} />
+              <Category key={data.catHeading} catImg={data.catImg} catHeading={data.catHeading} route={data.route} />
             ))
           }
         </div>
