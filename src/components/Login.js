@@ -74,7 +74,7 @@ const Login = () => {
           onClick={handleSignWithGoogle}
         >
           <img src={googleLogo} alt="" />
-          <span>Sing with Google</span>
+          <span>Sign in with Google</span>
         </button>
       </div>
     </div>
