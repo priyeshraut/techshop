@@ -2,6 +2,7 @@ import PaymentMethodImg from "./FooterComponents/PaymentMethodImg";
 import { paymentMethodImgData } from "../utils/mockData";
 import FooterNavigation from "./FooterComponents/FooterNavigation";
 import NeedHelp from "./NeedHelp";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
