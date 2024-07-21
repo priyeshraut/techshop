@@ -16,7 +16,7 @@ const NeedHelp = () => {
             {location.pathname === "/helpcenter" ? (
               <>
                 Need Help? <br />
-                We're here to help.
+                We're here to help!
               </>
             ) : (
               <>
