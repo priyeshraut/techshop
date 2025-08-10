@@ -8,7 +8,10 @@ const User = () => {
       <div id="userCont">
         {user?.photoURL ? (
           <div id="userImg">
-            <img src={user.photoURL} alt="user" />
+            <img
+              src={user.photoURL}
+              alt="user"
+            />
           </div>
         ) : (
           <div>
