@@ -51,7 +51,7 @@ const useLogin = () => {
                 dispatch(addUser({ displayName: auth.currentUser.displayName }));
               })
               .catch(() => {
-                setErrorMessage("Something went wrong please try again some later");
+                setErrorMessage("Something went wrong please try again after some time");
               });
               navigate(fromPath)
           })
