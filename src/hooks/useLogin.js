@@ -87,7 +87,7 @@ const useLogin = () => {
           navigate(fromPath)
         })
         .catch(() => {
-          setErrorMessage("Something went wrong please try again some later");
+          setErrorMessage("Something went wrong please try again later");
         });
     };
 
