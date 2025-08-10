@@ -22,6 +22,8 @@
 Check out the website here: [techshopecom.netlify.app](https://techshopecom.netlify.app)
 
 
-Enroll Namaste React Course: namastedev.com/learn/namaste-react?_aff=946684857463
-Enroll Namaste Frontend System Design: namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463
-Enroll Namaste Node.js: namastedev.com/learn/namaste-node?_aff=946684857463
+Enroll Namaste React Course: [namastedev.com/learn/namaste-react?_aff=946684857463](https://namastedev.com/learn/namaste-react?_aff=946684857463)
+
+Enroll Namaste Frontend System Design: [namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463](https://namastedev.com/learn/namaste-frontend-system-design?_aff=946684857463)
+
+Enroll Namaste Node.js: [namastedev.com/learn/namaste-node?_aff=946684857463](https://namastedev.com/learn/namaste-node?_aff=946684857463)
